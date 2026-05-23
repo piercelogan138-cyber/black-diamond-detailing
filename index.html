@@ -1,10 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Black Diamond Detailing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Diamond Detailing</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0b0b0b;
+    color:#fff;
+    font-family:'Inter',sans-serif;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(10px);
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    color:#d4af37;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    color:#ddd;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#d4af37;
+    color:black;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:100px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:60px;
+    font-family:'Cormorant Garamond',serif;
+    color:#d4af37;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#141414;
+    padding:30px;
+    border:1px solid #222;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#d4af37;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    color:#ccc;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid #222;
+    color:#888;
+}
+</style>
 </head>
+
 <body>
-    <h1>Black Diamond Detailing</h1>
-    <p>Premium Auto Detailing for Luxury Vehicles</p>
+
+<header>
+<nav>
+<div class="logo">Black Diamond</div>
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Luxury Auto Detailing</h1>
+<p>Premium detailing, ceramic coatings, and paint correction for exotic and luxury vehicles.</p>
+<a href="#contact" class="btn">Book Consultation</a>
+</div>
+</section>
+
+<section class="section" id="services">
+<h2 class="section-title">Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Ceramic Coating</h3>
+<p>Long-lasting protection and showroom shine.</p>
+</div>
+
+<div class="card">
+<h3>Paint Correction</h3>
+<p>Remove swirls, scratches, and imperfections.</p>
+</div>
+
+<div class="card">
+<h3>Interior Restoration</h3>
+<p>Luxury-grade cleaning and conditioning.</p>
+</div>
+
+<div class="card">
+<h3>Maintenance Detail</h3>
+<p>Keep your vehicle pristine year-round.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="gallery">
+<h2 class="section-title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&q=80">
+
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<h2 class="section-title">Contact</h2>
+
+<p>📞 (555) 123-4567</p>
+<p>📍 Fort Lauderdale, Florida</p>
+<p>✉️ info@blackdiamonddetailing.com</p>
+
+<a href="#" class="btn">Request Quote</a>
+
+</section>
+
+<footer>
+© 2026 Black Diamond Detailing. All Rights Reserved.
+</footer>
+
 </body>
 </html>
