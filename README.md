@@ -1,1 +1,0 @@
-# black-diamond-detailing
